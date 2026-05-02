@@ -906,6 +906,166 @@
             font-size: 1em;
         }
 
+        /* Case Studies Section */
+        .case-studies-section {
+            background: #f9fafb;
+            padding: 100px 20px;
+        }
+
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .case-study-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.6s ease;
+            border: 1px solid rgba(6, 182, 212, 0.1);
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.15);
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .case-study-header {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+            border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+        }
+
+        .case-study-number {
+            font-size: 2.5em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #06B6D4 0%, #A855F7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            min-width: 60px;
+        }
+
+        .case-study-header-content h3 {
+            font-size: 1.5em;
+            color: #1f2937;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .case-study-client {
+            color: #06B6D4;
+            font-size: 0.95em;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .case-study-body {
+            padding: 30px;
+        }
+
+        .case-study-section {
+            margin-bottom: 25px;
+        }
+
+        .case-study-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .case-study-section h4 {
+            font-size: 1.1em;
+            color: #06B6D4;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .case-study-section p {
+            color: #4a4a4a;
+            line-height: 1.7;
+            margin: 0;
+            font-size: 0.95em;
+        }
+
+        .case-study-section ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .case-study-section ul li {
+            color: #4a4a4a;
+            padding: 8px 0;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        .case-study-section ul li:before {
+            content: '✓';
+            color: #06B6D4;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1em;
+        }
+
+        .case-study-results {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(6, 182, 212, 0.1);
+        }
+
+        .result-stat-small {
+            text-align: center;
+        }
+
+        .result-number {
+            display: block;
+            font-size: 1.8em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #06B6D4 0%, #A855F7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .result-label {
+            display: block;
+            font-size: 0.85em;
+            color: #666;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .case-study-header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .case-study-number {
+                font-size: 2em;
+            }
+
+            .case-study-results {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+
         /* FAQ */
         .faq-section {
             background: white;
@@ -1465,6 +1625,133 @@
                     <div class="impact-number">₹100Cr+</div>
                     <div class="impact-title">Scams Prevented (est.)</div>
                     <p>Estimated value of frauds prevented by reaching more users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section">
+        <div class="container">
+            <h2>Our <span>Case Studies</span></h2>
+            <p style="text-align: center; color: #666; font-size: 1.1em; margin-bottom: 60px; max-width: 700px; margin-left: auto; margin-right: auto;">Real results from real clients. Here's what we've delivered.</p>
+
+            <div class="case-studies-grid">
+                <!-- Case Study 1: Green Tech -->
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <div class="case-study-number">01</div>
+                        <div class="case-study-header-content">
+                            <h3>Bioenergy & Waste Management</h3>
+                            <p class="case-study-client">organicrecycling.co.in · B2B · 10 Months</p>
+                        </div>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="case-study-section">
+                            <h4>Challenge</h4>
+                            <p>Establish search authority in a niche B2B market with zero paid advertising. Pure organic growth needed.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Solution</h4>
+                            <ul>
+                                <li>Technical SEO optimization</li>
+                                <li>Strategic keyword mapping</li>
+                                <li>Consistent content + backlinks</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-results">
+                            <div class="result-stat-small">
+                                <span class="result-number">9,470</span>
+                                <span class="result-label">Organic Clicks</span>
+                            </div>
+                            <div class="result-stat-small">
+                                <span class="result-number">371K</span>
+                                <span class="result-label">Impressions</span>
+                            </div>
+                            <div class="result-stat-small">
+                                <span class="result-number">7.3</span>
+                                <span class="result-label">Avg. Position</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: EdTech -->
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <div class="case-study-number">02</div>
+                        <div class="case-study-header-content">
+                            <h3>Online Maths Education</h3>
+                            <p class="case-study-client">sparkedmaths.com · EdTech · 7 Weeks</p>
+                        </div>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="case-study-section">
+                            <h4>Challenge</h4>
+                            <p>Zero existing organic presence in a competitive EdTech space. Rapid visibility needed for students and parents.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Solution</h4>
+                            <ul>
+                                <li>Full content restructure</li>
+                                <li>Exam-focused keyword mapping</li>
+                                <li>High-frequency optimized content</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-results">
+                            <div class="result-stat-small">
+                                <span class="result-number">3,050</span>
+                                <span class="result-label">Organic Clicks</span>
+                            </div>
+                            <div class="result-stat-small">
+                                <span class="result-number">77.2K</span>
+                                <span class="result-label">Impressions</span>
+                            </div>
+                            <div class="result-stat-small">
+                                <span class="result-number">3.9%</span>
+                                <span class="result-label">CTR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3: Matrimony -->
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <div class="case-study-number">03</div>
+                        <div class="case-study-header-content">
+                            <h3>Marathi Matrimony Platform</h3>
+                            <p class="case-study-client">vadhuvarmahitikendra.com · Built from Scratch · 6 Weeks</p>
+                        </div>
+                    </div>
+                    <div class="case-study-body">
+                        <div class="case-study-section">
+                            <h4>Challenge</h4>
+                            <p>Zero digital presence — no website, no domain, no traffic. Complete build + immediate ranking required.</p>
+                        </div>
+                        <div class="case-study-section">
+                            <h4>Solution</h4>
+                            <ul>
+                                <li>Full website design & development</li>
+                                <li>SEO built in from day one</li>
+                                <li>High-intent keyword targeting</li>
+                            </ul>
+                        </div>
+                        <div class="case-study-results">
+                            <div class="result-stat-small">
+                                <span class="result-number">330</span>
+                                <span class="result-label">Clicks (6 Weeks)</span>
+                            </div>
+                            <div class="result-stat-small">
+                                <span class="result-number">20.6%</span>
+                                <span class="result-label">CTR</span>
+                            </div>
+                            <div class="result-stat-small">
+                                <span class="result-number">5.4</span>
+                                <span class="result-label">Avg. Position</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
